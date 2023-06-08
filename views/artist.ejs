@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/css/artist.css">
+<!-- Artist Info -->
+<center>
+    <section class="artist-info">
+        <% if(artist) {%>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="<%=artist.artistImgPath%>" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body ms-3">
+                            <span class="parents">
+                                <span>
+                                    <h4 class="card-title"><strong>
+                                            <%=artist.artistName%>
+                                        </strong> <br>
+                                        <h6 class="text-secondary">
+                                            <%=artist.origin%>
+                                        </h6>
+                                    </h4>
+                                </span>
+                            </span>
+                            <p class="card-text mt-2" style="text-align: left;">
+                                <%=artist.desc%>
+                            </p>
+                            <div class="mt-5">
+                                <p>
+                                    <a href="/users/favorite/createA?artistId=<%=artist.artistId%>"><button
+                                            type="button"
+                                            style="border-radius: 0; background-image: linear-gradient(90deg,lightblue,lightcoral);"
+                                            class="btn btn-primary px-5 art-fav-btn">Click to Add Favorite
+                                        </button></a>
+                                    <a href="/users/profile" class="card-link back-home"><i
+                                            class="fa-solid fa-house me-2"></i>Back
+                                        Home</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%}%>
+    </section>
+</center>

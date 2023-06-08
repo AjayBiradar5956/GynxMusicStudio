@@ -1,0 +1,66 @@
+.hide {
+    display: none;
+}
+
+.mc-section {
+    min-height: 60vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, #de6262, #ffb88c);
+    border-radius: 10px;
+}
+
+.song-image-name {
+    align-self: center;
+}
+
+.song-img {
+    margin-top: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px white;
+}
+
+.mc-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mc-controllers button {
+    background-color: inherit;
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 26px;
+}
+
+.mediac {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.symbol::before {
+    height: 100%;
+    width: 100%;
+}
+
+.link-body {
+    background-color: white;
+    height: 50px;
+    width: 180px;
+    margin: 20px;
+    font-size: 1.3rem;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.link-body a {
+    text-decoration: none;
+}

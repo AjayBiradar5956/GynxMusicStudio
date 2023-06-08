@@ -1,0 +1,83 @@
+header {
+    background: linear-gradient(90deg, lightBlue, lightpink);
+    height: 15vh;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Common-Class */
+.mb50px {
+    margin-bottom: 50px !important;
+}
+
+/* Header */
+#search-bar {
+    display: inline-block;
+    width: 35rem !important;
+    border-radius: 20px;
+    background-color: #323274 !important;
+    height: 2rem;
+    padding: 3px;
+}
+
+#search-bar input {
+    background-color: inherit;
+}
+
+.sign-out {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    font-size: 2.1rem;
+}
+
+.sign-out-btn {
+    border: none;
+    background-color: inherit;
+}
+
+
+#input-search {
+    border: none;
+    width: 200px;
+    color: white;
+}
+
+#input-search:focus {
+    outline: none;
+}
+
+.user-name {
+    font-size: 1rem;
+}
+
+#name {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 980px) {
+    .favre-item a {
+        margin-left: 0px !important;
+    }
+
+    #search-bar {
+        display: block;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+
+    #bell-icon {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .profile-pic {
+        display: block;
+        margin-top: 15px;
+    }
+}
+
+.fav {
+    font-size: 1.5rem;
+    font-weight: 600;
+}

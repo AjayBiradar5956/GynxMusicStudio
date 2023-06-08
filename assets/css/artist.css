@@ -1,0 +1,41 @@
+body {
+    background-color: #2d2d54 !important;
+}
+
+/* Artist Info */
+.artist-info {
+    width: 80%;
+    height: auto;
+}
+
+.card {
+    height: inherit;
+    border: none;
+    border-radius: 10px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card img {
+    height: 55vh;
+    width: 55vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.parents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.back-home {
+    font-size: 1.2rem;
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+}

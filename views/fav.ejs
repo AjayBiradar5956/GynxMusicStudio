@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/css/fav.css">
+<div id="favorite-cont">
+    <!-- Favorite Songs -->
+    <div class="container mt-5">
+        <center>
+            <h1 class="mb-5 mt-2">Favorite Songs </h1>
+        </center>
+        <ul class="list-group list-group-flush" style="list-style: none;">
+            <% favorites.forEach((favorite)=> { %>
+                <li id="fav-<%=favorite._id %>">
+                    <% if(user.id==favorite.user._id) { %>
+                        <span id="fav-img-con">
+                            <img src="<%=favorite.songImgPath%>" class="songImg">
+                        </span>
+                        <span class="details">
+                            <%= favorite.songName %>
+                        </span>
+                        <span class="delete" id=`${favorite.id}`>
+
+                            <a class="delete-post-button" href="/users/favorite/destroy/<%= favorite.id %>"><button
+                                    class="delete-btn"><i class="fa-solid fa-trash"></i></button></a>
+                        </span>
+                        <%}%>
+                </li>
+                <hr>
+                <% }) %>
+
+        </ul>
+
+    </div>
+    <!-- Favorite Artist -->
+    <div class="container mt-5">
+        <center>
+            <h1 class="mb-5 mt-2">Favorite Artist </h1>
+        </center>
+        <ul class="list-group list-group-flush" style="list-style: none;">
+
+            <% favArtist.forEach((favArt)=> { %>
+                <li id="fav-<%=favArt._id %>">
+                    <% if(favArt) { %>
+                        <span id="fav-img-con">
+                            <img src="<%=favArt.artistImgPath%>" class="songImg">
+                        </span>
+                        <span class="details">
+                            <%= favArt.artistName %>
+                        </span>
+                        <span class="delete" id=`${favArt.id}`>
+
+                            <a class="delete-post-button" href="/users/favorite/destroyA/<%= favArt.id %>"><button
+                                    class="delete-btn"><i class="fa-solid fa-trash"></i></button></a>
+                        </span>
+                        <%}%>
+                </li>
+                <hr>
+                <% }) %>
+
+        </ul>
+    </div>
+
+</div>
+<center>
+    <div class="link-body mb-3">
+        <a href="/users/profile" class="card-link"><i class="fa-solid fa-house me-2"></i>Back Home</a>
+    </div>
+</center>
