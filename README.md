@@ -7,6 +7,7 @@ Hi, Welcome to Gynx Music Studio.
 - Most of the data is stored within the files itself such as images, songs(used only one each for different sections to save memory) within the assets folder. 
 - **Database:** Connected to Mongo Atlas (stores user information).
 - **Tech Stack:** HTML,CSS,JS,BootStrap,NodeJs,ejs,MongoDB Atlas,noty (Ref: Font Awesome for icons)
+- **Live Link:** https://gynxmusicplayer.onrender.com/
 
 **Setup**
 - Steps before running the code do a **"npm i"** in your terminal to download all the dependencies.
