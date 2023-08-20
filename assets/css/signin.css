@@ -20,6 +20,20 @@ input:focus {
     padding-bottom: 10px;
 }
 
+#demo-div {
+    background-color: white;
+    border-radius: 10px;
+    width: 30vw;
+    height: 30vh;
+    text-align: center;
+    align-self: center;
+    margin-right: 50px;
+    color: black;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
 #inner-div {
     background-color: white;
     border-radius: 10px;
