@@ -7,7 +7,7 @@ async function connectToDatabase() {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
-        console.log('Connected to MongoDB compass');
+        console.log('Connected to MongoDB atlas');
     } catch (error) {
         console.error('MongoDB connection error:', error);
     }
