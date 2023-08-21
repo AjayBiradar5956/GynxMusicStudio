@@ -1,7 +1,3 @@
-// Mongo Atlas
-
-//Connect to your own db
-// const db = "mongodb+srv://ajaybiradar5956:ajay362AJAY@cluster0.5ebtloc.mongodb.net/?retryWrites=true&w=majority";
 const mongoose = require('mongoose');
 
 async function connectToDatabase() {
@@ -11,7 +7,7 @@ async function connectToDatabase() {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
-        console.log('Connected to MongoDB Atlas');
+        console.log('Connected to MongoDB compass');
     } catch (error) {
         console.error('MongoDB connection error:', error);
     }
